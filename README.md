@@ -6,7 +6,10 @@ Create a neural network to track and potentially reduce the amount  my puppy bar
 
 ## dependencies
 mac:
-brew install __sox__ (mac requirement)
+brew install __sox__
+
+linux:
+sudo apt-get install sox libsox-fmt-all
 
 ## init
 npm start
