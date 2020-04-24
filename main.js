@@ -8,6 +8,13 @@ const DIRECTORY = 'recordings';
 // Options
 // Options is an optional parameter for the constructor call.
 // If an option is not given the default value, as seen below, will be used.
+
+
+const thresholdStop = {
+    computer: 0.8,
+    headphones: 0.1
+}
+
 const options = {
   program: process.platform === 'win32' ? 'sox' : 'rec', // Which program to use, either `arecord`, `rec`, or `sox`.
   device: null,       // Recording device to use. (only for `arecord`)
@@ -21,7 +28,7 @@ const options = {
   // Following options only available when using `rec` or `sox`.
   silence: 2,         // Duration of silence in seconds before it stops recording.
   thresholdStart: 0.8,  // Silence threshold to start recording.
-  thresholdStop: 0.1,   // Silence threshold to stop recording.
+  thresholdStop: thresholdStop.computer,   // Silence threshold to stop recording.
   keepSilence: false   // Keep the silence in the recording.
 };
 
