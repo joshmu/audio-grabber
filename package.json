@@ -1,13 +1,13 @@
 {
-  "name": "audio-grab",
+  "name": "audio-grabber",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Grab computer mic audio and save the world.",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node main.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["audiorecorder", "microphone", "audio"],
+  "author": "Josh Mu",
   "license": "ISC",
   "dependencies": {
     "node-audiorecorder": "^2.0.0"
